@@ -1,0 +1,14 @@
+{
+	"nome":"BATISTA MEZENGA",
+    "matricula":"112244",
+    "telefone":"12345678901",
+    "funcao":"PATRULHEIRO",
+    "inspetor": {
+        "id": 1,
+    	"matricula": "123456",
+    	"nome": "ALESSANDRO FRANÇA",
+    	"telefone": "12345678901",
+    	"email": "ALE@GAMIL.COM",
+    	"turno": "DIA"
+    }
+}

@@ -31,7 +31,7 @@ public class InspetorController {
 	@PostMapping
 	public ResponseEntity<Inspetor> saveRest(@Valid @RequestBody Inspetor inspetor){
 		Inspetor insptSalvo = inspetorService.save(inspetor);
-		System.out.println(inspetor);
+		//System.out.println(inspetor);
 		return ResponseEntity.ok().body(insptSalvo);
 	}
 	
