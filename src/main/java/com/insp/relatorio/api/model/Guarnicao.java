@@ -9,6 +9,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -20,6 +21,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
+@Table(name = "TB_GUARNICAO")
 public class Guarnicao implements Serializable {
 	private static final long serialVersionUID = 1L;
 	

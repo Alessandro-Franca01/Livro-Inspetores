@@ -1,14 +1,30 @@
 {
-	"nome":"BATISTA MEZENGA",
-    "matricula":"112244",
-    "telefone":"12345678901",
-    "funcao":"PATRULHEIRO",
-    "inspetor": {
-        "id": 1,
-    	"matricula": "123456",
-    	"nome": "ALESSANDRO FRANÃ‡A",
-    	"telefone": "12345678901",
-    	"email": "ALE@GAMIL.COM",
-    	"turno": "DIA"
+	"Guarnicao1":{
+		"nome":"BATISTA MEZENGA",
+	    "matricula":"112244",
+	    "telefone":"12345678901",
+	    "funcao":"PATRULHEIRO",
+	    "inspetor": {
+	        "id": 1,
+	        "matricula": "123456",
+	        "nome": "ALESSANDRO FRANÇA",
+	        "telefone": "12345678901",
+	        "email": "ALE@GAMIL.COM",
+	        "turno": "DIA"
+	    }
+    },
+    "Guarnicao2":{
+		"nome":"PAULO MEZENGA",
+	    "matricula":"112124",
+	    "telefone":"12345908901",
+	    "funcao":"MOTORISTA",
+	    "inspetor": {
+	    	"id": 2,
+	        "matricula": "123111",
+			"nome": "ALEANDRO FRANÇA",
+			"telefone": "10102222333",
+			"email": "LE@GAMIL.COM",
+			"turno": "NOITE"
+	    }
     }
 }

@@ -30,8 +30,7 @@ public class InspetorController {
 	// METODO DE SALVAR: FUNCIONANDO
 	@PostMapping
 	public ResponseEntity<Inspetor> saveRest(@Valid @RequestBody Inspetor inspetor){
-		Inspetor insptSalvo = inspetorService.save(inspetor);
-		//System.out.println(inspetor);
+		Inspetor insptSalvo = inspetorService.save(inspetor);	
 		return ResponseEntity.ok().body(insptSalvo);
 	}
 	
