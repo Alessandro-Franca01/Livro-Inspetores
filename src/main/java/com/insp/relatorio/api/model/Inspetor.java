@@ -58,9 +58,12 @@ public class Inspetor implements Serializable {
 	@OneToMany(mappedBy = "inspetor")
 	private List<Guarnicao> guarnicao = new ArrayList<>();
 	
-	@JsonIgnore // Testar Amanha!!!
+	@JsonIgnore // Melhorar isso depois
 	@OneToMany(mappedBy = "id.inspetorId")
 	private Set<PassarServico> passarServico = new HashSet<>();
+	
+	@OneToMany(mappedBy = "inspetorSaida") // Testar: Relacionamento FK de (Inspetor x PassarServico)
+	private Set<PassarServico> receberServico = new HashSet<>();
 	
 	@Override
 	public int hashCode() {

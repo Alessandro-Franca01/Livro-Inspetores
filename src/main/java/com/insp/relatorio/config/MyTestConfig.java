@@ -35,10 +35,10 @@ public class MyTestConfig implements CommandLineRunner{
 	public void run(String... args) throws Exception {
 		//System.out.println("Testando Command Line Runner!!");
 		
-		Inspetor insp1 = new Inspetor(null,"123456", "ALESSANDRO FRANCA", "83998123455", "ALE@GMAIL.COM", "DIA", null, null);
-		Inspetor insp2 = new Inspetor(null,"123422", "ALEANDRO FRANCA", "83998143455", "LE@GMAIL.COM", "NOITE", null, null);
-		Inspetor insp3 = new Inspetor(null,"123412", "ALISSON FRANCA", "8399812231", "ALI@GMAIL.COM", "NOITE", null, null);
-		Inspetor insp4 = new Inspetor(null,"123434", "DARCILENE XAVIER", "83988323455", "DARCI@GMAIL.COM", "DIA", null, null);
+		Inspetor insp1 = new Inspetor(null,"123456", "ALESSANDRO FRANCA", "83998123455", "ALE@GMAIL.COM", "DIA", null, null, null);
+		Inspetor insp2 = new Inspetor(null,"123422", "ALEANDRO FRANCA", "83998143455", "LE@GMAIL.COM", "NOITE", null, null, null);
+		Inspetor insp3 = new Inspetor(null,"123412", "ALISSON FRANCA", "8399812231", "ALI@GMAIL.COM", "NOITE", null, null, null);
+		Inspetor insp4 = new Inspetor(null,"123434", "DARCILENE XAVIER", "83988323455", "DARCI@GMAIL.COM", "DIA", null, null, null);
 		
 		inspetorRepository.save(insp1);
 		inspetorRepository.save(insp2);
@@ -54,7 +54,7 @@ public class MyTestConfig implements CommandLineRunner{
 		
 		servicoRepository.save(s1);
 		
-		PassarServico ps1 = new PassarServico(insp1, s1, "Testando");
+		PassarServico ps1 = new PassarServico(insp1, s1, "Testando", insp2);
 		
 		passarServicoRepository.save(ps1);
 		
