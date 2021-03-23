@@ -26,11 +26,17 @@ public class ServicoServiceImpl implements ServicoService{
 	@Autowired
 	private InspetorRepository inspetorRepository;
 
+	// Esse end-point: Está errado pq só consigo passar um Inspetor!
 	@Override
 	public Servico save(Servico servico, Long idInpetor) {
 		Servico servicoSalvo = serviceRepository.save(servico);
 		Optional<Inspetor> inpBuscado = inspetorRepository.findById(idInpetor);
 		String test = "Testando Relação";
+		// Essa Passagem de Servico não pode ficar assim hardcode
+		/*
+		 * Tenho que criar um service de PassarServico
+		 * Depois posso injetar aqui ???
+		 */
 		PassarServico ps = new PassarServico(inpBuscado.get(), servicoSalvo, test);
 		PassarServico psSalvo = passarServicoRepository.save(ps);
 		return servicoSalvo;
@@ -43,6 +49,7 @@ public class ServicoServiceImpl implements ServicoService{
 		return servicoEncontrado;
 	}
 
+	// Esse metodo está entrando em lopping: Arruamr isso!
 	@Override
 	public List<Servico> findServicoAll() {	
 		return serviceRepository.findAll();

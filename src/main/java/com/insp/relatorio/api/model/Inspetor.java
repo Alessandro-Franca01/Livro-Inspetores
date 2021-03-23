@@ -32,11 +32,15 @@ import lombok.Setter;
 @Table(name="tb_inspetor")
 public class Inspetor implements Serializable {
 	private static final long serialVersionUID = 1L;
+	
+	// AQUI: Vou ter que criar as DTOs(Response/Request)
+	// Fazer os deletes logicos
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 		
+	// Esse campo ainda pode receber Strings vazias
 	@Column(nullable = false, name = "CK_MATRICULA", length = 6, unique= true)
 	private String matricula;
 	

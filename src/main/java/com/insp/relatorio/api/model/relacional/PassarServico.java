@@ -25,12 +25,14 @@ public class PassarServico implements Serializable{
 	@EmbeddedId
 	private PassarServicoPk id = new PassarServicoPk();
 	
-	private String descricao;
+	private String passagem;
 	
-	public PassarServico(Inspetor inspetor, Servico servico, String descricao) {
+	// Posso criar um atributo com o id do Inspetor (passar/recebe) Servico
+	
+	public PassarServico(Inspetor inspetor, Servico servico, String passagem) {
 		id.setInspetorId(inspetor);
 		id.setServicoId(servico);
-		this.descricao = descricao;
+		this.passagem = passagem;
 	}
 
 }

@@ -1,29 +1,44 @@
 {
 	"Insp1":{
-		"matricula": "123456",
-		"nome": "ALESSANDRO FRANÇA",
-		"telefone": "12345678901",
-		"email": "ALE@GAMIL.COM",
-		"turno": "DIA",
-		"guarnicao":{},
-		"passarServico":{}
-		},
+	"matricula": "123456",
+	"nome": "ALESSANDRO FRANÇA",
+	"telefone": "12345678901",
+	"email": "ALE@GAMIL.COM",
+	"turno": "DIA"
+	},
 	"Insp2":{
-		"matricula": "123111",
-		"nome": "ALEANDRO FRANÇA",
-		"telefone": "10102222333",
-		"email": "LE@GAMIL.COM",
-		"turno": "NOITE",
-		"guarnicao":{},
-		"passarServico":{}
-		},
+	"matricula": "123111",
+	"nome": "ALEANDRO FRANÇA",
+	"telefone": "10102222333",
+	"email": "LE@GAMIL.COM",
+	"turno": "NOITE"
+	},
 	"Insp3":{
-		"matricula": "123121",
-		"nome": "ALISSON FRANÇA",
-		"telefone": "10102444333",
-		"email": "ALI@GAMIL.COM",
-		"turno": "NOITE",
-		"guarnicao":{},
-		"passarServico":{}
+	"matricula": "123121",
+	"nome": "ALISSON FRANÇA",
+	"telefone": "10102444333",
+	"email": "ALI@GAMIL.COM",
+	"turno": "NOITE"
+	},
+	"Insp4":{
+	"matricula": "123100",
+	"nome": "DARCILENE XAVIER",
+	"telefone": "10102221243",
+	"email": "DARCI@GAMIL.COM",
+	"turno": "DIA"
+	},
+	"Insp5":{
+	"matricula": "123130",
+	"nome": "PAULO TERDULINO",
+	"telefone": "1010123098",
+	"email": "PAULO@GAMIL.COM",
+	"turno": "NOITE"
+	},
+	"Insp6":{
+	"matricula": "123760",
+	"nome": "FRANCISCO LUIZ",
+	"telefone": "10101212990",
+	"email": "LUIZ@GAMIL.COM",
+	"turno": "DIA"
 	}
 }

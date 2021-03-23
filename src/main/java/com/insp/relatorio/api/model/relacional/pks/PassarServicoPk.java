@@ -20,7 +20,7 @@ public class PassarServicoPk implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
 	@ManyToOne
-	@JoinColumn(name ="id_inspetor") // Esse id pode dar erro quando rodar o code ???
+	@JoinColumn(name ="id_inspetor") 
 	private Inspetor inspetorId;
 	
 	@ManyToOne

@@ -1,6 +1,6 @@
 package com.insp.relatorio.api.controller;
 
-import java.time.Instant;
+import java.util.List;
 import java.util.Optional;
 
 import javax.validation.Valid;
@@ -35,6 +35,12 @@ public class ServicoController {
 	public ResponseEntity<Optional<Servico>> findRest(@PathVariable Long id){
 		Optional<Servico> servicoEncontrado = servicoService.findServicoById(id);
 		return ResponseEntity.ok().body(servicoEncontrado);
+	}
+	
+	@GetMapping
+	public ResponseEntity<List<Servico>> findAllRest(){
+		List<Servico> listServico = servicoService.findServicoAll();
+		return ResponseEntity.ok().body(listServico);
 	}
 		
 	// Depois ver como fazer fazer a lógica de alterar Servico
